@@ -1,0 +1,92 @@
+
+(:DESCRIPTIONS
+ ((:X
+   202
+   :Y
+   125
+   :ID
+   3
+   :NAME
+   ""
+   :FORMULA
+   "(= a arturo)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   58
+   :Y
+   262
+   :ID
+   4
+   :NAME
+   ""
+   :FORMULA
+   "(and (Llama a) (= a arturo))"
+   :JUSTIFICATION
+   LOGIC::AND-INTRO)
+  (:X
+   36
+   :Y
+   131
+   :ID
+   2
+   :NAME
+   ""
+   :FORMULA
+   "(Llama a)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   114
+   :Y
+   618
+   :ID
+   1
+   :NAME
+   ""
+   :FORMULA
+   "(exists (x) (if (and (Llama x) (= x arturo) ) (forall (y) (Llama y))))"
+   :JUSTIFICATION
+   LOGIC::EXISTS-INTRO)
+  (:X
+   137
+   :Y
+   484
+   :ID
+   5
+   :NAME
+   ""
+   :FORMULA
+   "(if (and (Llama a) (= a arturo)) (forall y (Llama y)))"
+   :JUSTIFICATION
+   LOGIC::PC-PROVABILITY)
+  (:X
+   406
+   :Y
+   266
+   :ID
+   6
+   :NAME
+   ""
+   :FORMULA
+   "(forall y (Llama y))"
+   :JUSTIFICATION
+   LOGIC::ASSUME))
+ :STRUCTURES
+ ((:CONCLUSION 3 :PREMISES NIL)
+  (:CONCLUSION 4 :PREMISES (2 3))
+  (:CONCLUSION 2 :PREMISES NIL)
+  (:CONCLUSION 1 :PREMISES (5))
+  (:CONCLUSION 5 :PREMISES (6 4))
+  (:CONCLUSION 6 :PREMISES NIL))
+ :INTERFACE
+ (:X
+  -1557
+  :Y
+  147
+  :WIDTH
+  1183
+  :HEIGHT
+  767
+  :PROOF-SYSTEM
+  LOGIC::FIRST-ORDER-LOGIC))

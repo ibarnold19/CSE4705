@@ -1,0 +1,131 @@
+
+(:DESCRIPTIONS
+ ((:X
+   60
+   :Y
+   26
+   :ID
+   1
+   :NAME
+   ""
+   :FORMULA
+   "(and (BarberOf a b) (Town b) (ManOf a b) (forall (y) (if (ManOf y b) (iff (Shaves a y) (not (Shaves y y))))) )"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   2
+   :Y
+   157
+   :ID
+   2
+   :NAME
+   ""
+   :FORMULA
+   "(forall (y) (if (ManOf y b) (iff (Shaves a y) (not (Shaves y y)))))"
+   :JUSTIFICATION
+   LOGIC::AND-ELIM)
+  (:X
+   23
+   :Y
+   259
+   :ID
+   4
+   :NAME
+   ""
+   :FORMULA
+   "(if (ManOf a b) (iff (Shaves a a) (not (Shaves a a))))"
+   :JUSTIFICATION
+   LOGIC::FORALL-ELIM)
+  (:X
+   350
+   :Y
+   425
+   :ID
+   5
+   :NAME
+   ""
+   :FORMULA
+   "(iff (Shaves a a) (not (Shaves a a)))"
+   :JUSTIFICATION
+   LOGIC::PC-PROVABILITY)
+  (:X
+   517
+   :Y
+   199
+   :ID
+   3
+   :NAME
+   ""
+   :FORMULA
+   "(exists (z) (and (BarberOf a z) (Town z) (ManOf a z) (forall (y) (if (ManOf y z) (iff (Shaves a y) (not (Shaves y y))))) ))"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   619
+   :Y
+   326
+   :ID
+   8
+   :NAME
+   ""
+   :FORMULA
+   "(exists (x z) (and (BarberOf x z) (Town z) (ManOf x z) (forall (y) (if (ManOf y z) (iff (Shaves x y) (not (Shaves y y))))) ))"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   716
+   :Y
+   767
+   :ID
+   7
+   :NAME
+   ""
+   :FORMULA
+   "(and \\zeta (not \\zeta))"
+   :JUSTIFICATION
+   LOGIC::EXISTS-ELIM)
+  (:X
+   438
+   :Y
+   571
+   :ID
+   9
+   :NAME
+   ""
+   :FORMULA
+   "(and \\zeta (not \\zeta))"
+   :JUSTIFICATION
+   LOGIC::PC-PROVABILITY)
+  (:X
+   590
+   :Y
+   634
+   :ID
+   6
+   :NAME
+   ""
+   :FORMULA
+   "(and \\zeta (not \\zeta))"
+   :JUSTIFICATION
+   LOGIC::EXISTS-ELIM))
+ :STRUCTURES
+ ((:CONCLUSION 1 :PREMISES NIL)
+  (:CONCLUSION 2 :PREMISES (1))
+  (:CONCLUSION 4 :PREMISES (2))
+  (:CONCLUSION 5 :PREMISES (1 4))
+  (:CONCLUSION 3 :PREMISES NIL)
+  (:CONCLUSION 8 :PREMISES NIL)
+  (:CONCLUSION 7 :PREMISES (8 6))
+  (:CONCLUSION 9 :PREMISES (5))
+  (:CONCLUSION 6 :PREMISES (9 3)))
+ :INTERFACE
+ (:X
+  -1485
+  :Y
+  131
+  :WIDTH
+  1464
+  :HEIGHT
+  772
+  :PROOF-SYSTEM
+  LOGIC::FIRST-ORDER-LOGIC))

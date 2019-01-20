@@ -1,0 +1,79 @@
+
+(:DESCRIPTIONS
+ ((:X
+   38
+   :Y
+   20
+   :ID
+   1
+   :NAME
+   ""
+   :FORMULA
+   "(forall (x y) (Loves x y))"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   186
+   :Y
+   136
+   :ID
+   2
+   :NAME
+   ""
+   :FORMULA
+   "(forall (y) (Loves a y))"
+   :JUSTIFICATION
+   LOGIC::FORALL-ELIM)
+  (:X
+   361
+   :Y
+   252
+   :ID
+   3
+   :NAME
+   ""
+   :FORMULA
+   "(Loves a b)"
+   :JUSTIFICATION
+   LOGIC::FORALL-ELIM)
+  (:X
+   475
+   :Y
+   371
+   :ID
+   4
+   :NAME
+   ""
+   :FORMULA
+   "(exists (y) (Loves a y))"
+   :JUSTIFICATION
+   LOGIC::EXISTS-INTRO)
+  (:X
+   613
+   :Y
+   497
+   :ID
+   5
+   :NAME
+   ""
+   :FORMULA
+   "(forall (x) (exists (y) (Loves x y)))"
+   :JUSTIFICATION
+   LOGIC::FORALL-INTRO))
+ :STRUCTURES
+ ((:CONCLUSION 1 :PREMISES NIL)
+  (:CONCLUSION 2 :PREMISES (1))
+  (:CONCLUSION 3 :PREMISES (2))
+  (:CONCLUSION 4 :PREMISES (3))
+  (:CONCLUSION 5 :PREMISES (4)))
+ :INTERFACE
+ (:X
+  -918
+  :Y
+  116
+  :WIDTH
+  893
+  :HEIGHT
+  859
+  :PROOF-SYSTEM
+  LOGIC::FIRST-ORDER-LOGIC))

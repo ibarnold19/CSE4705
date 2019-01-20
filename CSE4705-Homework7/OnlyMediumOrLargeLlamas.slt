@@ -1,0 +1,157 @@
+
+(:DESCRIPTIONS
+ ((:X
+   278
+   :Y
+   33
+   :ID
+   1
+   :NAME
+   ""
+   :FORMULA
+   "(not (exists (x) (and (Small x) (Llama x) )))"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   153
+   :Y
+   81
+   :ID
+   4
+   :NAME
+   ""
+   :FORMULA
+   "(Small a)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   26
+   :Y
+   81
+   :ID
+   3
+   :NAME
+   ""
+   :FORMULA
+   "(Llama a)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   37
+   :Y
+   213
+   :ID
+   5
+   :NAME
+   ""
+   :FORMULA
+   "(and (Small a) (Llama a))"
+   :JUSTIFICATION
+   LOGIC::AND-INTRO)
+  (:X
+   15
+   :Y
+   345
+   :ID
+   6
+   :NAME
+   ""
+   :FORMULA
+   "(exists (x) (and (Small x) (Llama x)))"
+   :JUSTIFICATION
+   LOGIC::EXISTS-INTRO)
+  (:X
+   239
+   :Y
+   470
+   :ID
+   7
+   :NAME
+   ""
+   :FORMULA
+   "(not (Small a))"
+   :JUSTIFICATION
+   LOGIC::NOT-INTRO)
+  (:X
+   423
+   :Y
+   256
+   :ID
+   2
+   :NAME
+   ""
+   :FORMULA
+   "(forall (x) (or (Small x) (Medium x) (Large x) ))"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   291
+   :Y
+   604
+   :ID
+   9
+   :NAME
+   ""
+   :FORMULA
+   "(or (Medium a) (Large a))"
+   :JUSTIFICATION
+   LOGIC::PC-PROVABILITY)
+  (:X
+   417
+   :Y
+   467
+   :ID
+   8
+   :NAME
+   ""
+   :FORMULA
+   "(or (Small a) (Medium a) (Large a) )"
+   :JUSTIFICATION
+   LOGIC::FORALL-ELIM)
+  (:X
+   225
+   :Y
+   702
+   :ID
+   10
+   :NAME
+   ""
+   :FORMULA
+   "(if (Llama a) (or (Medium a) (Large a)))"
+   :JUSTIFICATION
+   LOGIC::IF-INTRO)
+  (:X
+   200
+   :Y
+   812
+   :ID
+   11
+   :NAME
+   ""
+   :FORMULA
+   "(forall (x) (if (Llama x) (or (Medium x) (Large x) )))"
+   :JUSTIFICATION
+   LOGIC::FORALL-INTRO))
+ :STRUCTURES
+ ((:CONCLUSION 1 :PREMISES NIL)
+  (:CONCLUSION 4 :PREMISES NIL)
+  (:CONCLUSION 3 :PREMISES NIL)
+  (:CONCLUSION 5 :PREMISES (4 3))
+  (:CONCLUSION 6 :PREMISES (5))
+  (:CONCLUSION 7 :PREMISES (1 6))
+  (:CONCLUSION 2 :PREMISES NIL)
+  (:CONCLUSION 9 :PREMISES (8 7))
+  (:CONCLUSION 8 :PREMISES (2))
+  (:CONCLUSION 10 :PREMISES (9))
+  (:CONCLUSION 11 :PREMISES (10)))
+ :INTERFACE
+ (:X
+  -1080
+  :Y
+  53
+  :WIDTH
+  1016
+  :HEIGHT
+  902
+  :PROOF-SYSTEM
+  LOGIC::FIRST-ORDER-LOGIC))
