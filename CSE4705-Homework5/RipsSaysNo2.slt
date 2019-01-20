@@ -1,0 +1,105 @@
+
+(:DESCRIPTIONS
+ ((:X
+   156
+   :Y
+   205
+   :ID
+   4
+   :NAME
+   ""
+   :FORMULA
+   "(and φ ψ)"
+   :JUSTIFICATION
+   LOGIC::AND-INTRO)
+  (:X
+   178
+   :Y
+   312
+   :ID
+   5
+   :NAME
+   ""
+   :FORMULA
+   "ψ"
+   :JUSTIFICATION
+   LOGIC::AND-ELIM)
+  (:X
+   155
+   :Y
+   419
+   :ID
+   6
+   :NAME
+   ""
+   :FORMULA
+   "(if φ ψ)"
+   :JUSTIFICATION
+   LOGIC::IF-INTRO)
+  (:X
+   214
+   :Y
+   86
+   :ID
+   3
+   :NAME
+   ""
+   :FORMULA
+   "φ"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   91
+   :Y
+   86
+   :ID
+   2
+   :NAME
+   ""
+   :FORMULA
+   "ψ"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   257
+   :Y
+   562
+   :ID
+   7
+   :NAME
+   ""
+   :FORMULA
+   "(not ψ)"
+   :JUSTIFICATION
+   LOGIC::NOT-INTRO)
+  (:X
+   307
+   :Y
+   420
+   :ID
+   1
+   :NAME
+   ""
+   :FORMULA
+   "(not (if φ ψ))"
+   :JUSTIFICATION
+   LOGIC::ASSUME))
+ :STRUCTURES
+ ((:CONCLUSION 4 :PREMISES (2 3))
+  (:CONCLUSION 5 :PREMISES (4))
+  (:CONCLUSION 6 :PREMISES (5))
+  (:CONCLUSION 3 :PREMISES NIL)
+  (:CONCLUSION 2 :PREMISES NIL)
+  (:CONCLUSION 7 :PREMISES (1 6))
+  (:CONCLUSION 1 :PREMISES NIL))
+ :INTERFACE
+ (:X
+  -854
+  :Y
+  269
+  :WIDTH
+  927
+  :HEIGHT
+  680
+  :PROOF-SYSTEM
+  LOGIC::PROPOSITIONAL-CALCULUS))

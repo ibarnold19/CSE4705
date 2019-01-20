@@ -1,0 +1,183 @@
+
+(:DESCRIPTIONS
+ ((:X
+   60
+   :Y
+   32
+   :ID
+   5
+   :NAME
+   "8"
+   :FORMULA
+   "(not B)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   285
+   :Y
+   31
+   :ID
+   6
+   :NAME
+   "9"
+   :FORMULA
+   "A"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   158
+   :Y
+   153
+   :ID
+   7
+   :NAME
+   "10"
+   :FORMULA
+   "(and (not B) A)"
+   :JUSTIFICATION
+   LOGIC::AND-INTRO)
+  (:X
+   322
+   :Y
+   264
+   :ID
+   8
+   :NAME
+   "11"
+   :FORMULA
+   "(not B)"
+   :JUSTIFICATION
+   LOGIC::AND-ELIM)
+  (:X
+   395
+   :Y
+   383
+   :ID
+   9
+   :NAME
+   "12"
+   :FORMULA
+   "(not A)"
+   :JUSTIFICATION
+   LOGIC::NOT-INTRO)
+  (:X
+   34
+   :Y
+   382
+   :ID
+   1
+   :NAME
+   "1"
+   :FORMULA
+   "(or (not A) (not B) )"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   160
+   :Y
+   280
+   :ID
+   10
+   :NAME
+   "13"
+   :FORMULA
+   "(not A)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   445
+   :Y
+   81
+   :ID
+   2
+   :NAME
+   "2"
+   :FORMULA
+   "B"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   560
+   :Y
+   290
+   :ID
+   12
+   :NAME
+   "14"
+   :FORMULA
+   "C"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   715
+   :Y
+   294
+   :ID
+   3
+   :NAME
+   "3"
+   :FORMULA
+   "(if C A)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   208
+   :Y
+   516
+   :ID
+   11
+   :NAME
+   "15"
+   :FORMULA
+   "(not A)"
+   :JUSTIFICATION
+   LOGIC::OR-ELIM)
+  (:X
+   668
+   :Y
+   482
+   :ID
+   13
+   :NAME
+   "16"
+   :FORMULA
+   "A"
+   :JUSTIFICATION
+   LOGIC::IF-ELIM)
+  (:X
+   426
+   :Y
+   626
+   :ID
+   4
+   :NAME
+   "4"
+   :FORMULA
+   "(not C)"
+   :JUSTIFICATION
+   LOGIC::NOT-INTRO))
+ :STRUCTURES
+ ((:CONCLUSION 5 :PREMISES NIL)
+  (:CONCLUSION 6 :PREMISES NIL)
+  (:CONCLUSION 7 :PREMISES (6 5))
+  (:CONCLUSION 8 :PREMISES (7))
+  (:CONCLUSION 9 :PREMISES (2 8))
+  (:CONCLUSION 1 :PREMISES NIL)
+  (:CONCLUSION 10 :PREMISES NIL)
+  (:CONCLUSION 2 :PREMISES NIL)
+  (:CONCLUSION 12 :PREMISES NIL)
+  (:CONCLUSION 3 :PREMISES NIL)
+  (:CONCLUSION 11 :PREMISES (1 10 9))
+  (:CONCLUSION 13 :PREMISES (3 12))
+  (:CONCLUSION 4 :PREMISES (13 11)))
+ :INTERFACE
+ (:X
+  -964
+  :Y
+  223
+  :WIDTH
+  864
+  :HEIGHT
+  776
+  :PROOF-SYSTEM
+  LOGIC::PROPOSITIONAL-CALCULUS))

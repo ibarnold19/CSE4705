@@ -1,0 +1,66 @@
+
+(:DESCRIPTIONS
+ ((:X
+   243
+   :Y
+   68
+   :ID
+   1
+   :NAME
+   ""
+   :FORMULA
+   "(and \\phi \\psi)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   393
+   :Y
+   223
+   :ID
+   2
+   :NAME
+   ""
+   :FORMULA
+   "\\phi"
+   :JUSTIFICATION
+   LOGIC::AND-ELIM)
+  (:X
+   181
+   :Y
+   226
+   :ID
+   3
+   :NAME
+   ""
+   :FORMULA
+   "\\psi"
+   :JUSTIFICATION
+   LOGIC::AND-ELIM)
+  (:X
+   257
+   :Y
+   371
+   :ID
+   4
+   :NAME
+   ""
+   :FORMULA
+   "(and \\psi \\phi)"
+   :JUSTIFICATION
+   LOGIC::AND-INTRO))
+ :STRUCTURES
+ ((:CONCLUSION 1 :PREMISES NIL)
+  (:CONCLUSION 2 :PREMISES (1))
+  (:CONCLUSION 3 :PREMISES (1))
+  (:CONCLUSION 4 :PREMISES (2 3)))
+ :INTERFACE
+ (:X
+  932
+  :Y
+  105
+  :WIDTH
+  917
+  :HEIGHT
+  784
+  :PROOF-SYSTEM
+  LOGIC::PROPOSITIONAL-CALCULUS))

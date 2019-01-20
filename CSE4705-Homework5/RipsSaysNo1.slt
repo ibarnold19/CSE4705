@@ -1,0 +1,170 @@
+
+(:DESCRIPTIONS
+ ((:X
+   104
+   :Y
+   391
+   :ID
+   6
+   :NAME
+   "6"
+   :FORMULA
+   "(if (not ψ) (not φ))"
+   :JUSTIFICATION
+   LOGIC::IF-INTRO)
+  (:X
+   202
+   :Y
+   545
+   :ID
+   8
+   :NAME
+   ""
+   :FORMULA
+   "(not φ)"
+   :JUSTIFICATION
+   LOGIC::IF-ELIM)
+  (:X
+   334
+   :Y
+   540
+   :ID
+   9
+   :NAME
+   ""
+   :FORMULA
+   "φ"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   25
+   :Y
+   38
+   :ID
+   2
+   :NAME
+   ""
+   :FORMULA
+   "(not ψ)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   271
+   :Y
+   671
+   :ID
+   10
+   :NAME
+   ""
+   :FORMULA
+   "ψ"
+   :JUSTIFICATION
+   LOGIC::NOT-ELIM)
+  (:X
+   449
+   :Y
+   254
+   :ID
+   1
+   :NAME
+   "1"
+   :FORMULA
+   "(not (if φ ψ))"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   247
+   :Y
+   774
+   :ID
+   11
+   :NAME
+   ""
+   :FORMULA
+   "(if φ ψ)"
+   :JUSTIFICATION
+   LOGIC::IF-INTRO)
+  (:X
+   195
+   :Y
+   43
+   :ID
+   3
+   :NAME
+   ""
+   :FORMULA
+   "(not φ)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   105
+   :Y
+   163
+   :ID
+   4
+   :NAME
+   "4"
+   :FORMULA
+   "(and (not ψ) (not φ))"
+   :JUSTIFICATION
+   LOGIC::AND-INTRO)
+  (:X
+   367
+   :Y
+   917
+   :ID
+   12
+   :NAME
+   "GOAL"
+   :FORMULA
+   "φ"
+   :JUSTIFICATION
+   LOGIC::NOT-ELIM)
+  (:X
+   132
+   :Y
+   276
+   :ID
+   5
+   :NAME
+   ""
+   :FORMULA
+   "(not φ)"
+   :JUSTIFICATION
+   LOGIC::AND-ELIM)
+  (:X
+   260
+   :Y
+   385
+   :ID
+   7
+   :NAME
+   ""
+   :FORMULA
+   "(not ψ)"
+   :JUSTIFICATION
+   LOGIC::ASSUME))
+ :STRUCTURES
+ ((:CONCLUSION 6 :PREMISES (5))
+  (:CONCLUSION 8 :PREMISES (7 6))
+  (:CONCLUSION 9 :PREMISES NIL)
+  (:CONCLUSION 2 :PREMISES NIL)
+  (:CONCLUSION 10 :PREMISES (9 8))
+  (:CONCLUSION 1 :PREMISES NIL)
+  (:CONCLUSION 11 :PREMISES (10))
+  (:CONCLUSION 3 :PREMISES NIL)
+  (:CONCLUSION 4 :PREMISES (2 3))
+  (:CONCLUSION 12 :PREMISES (1 11))
+  (:CONCLUSION 5 :PREMISES (4))
+  (:CONCLUSION 7 :PREMISES NIL))
+ :INTERFACE
+ (:X
+  -876
+  :Y
+  220
+  :WIDTH
+  1042
+  :HEIGHT
+  928
+  :PROOF-SYSTEM
+  LOGIC::PROPOSITIONAL-CALCULUS))

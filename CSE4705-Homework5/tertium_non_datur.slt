@@ -1,0 +1,92 @@
+
+(:DESCRIPTIONS
+ ((:X
+   323
+   :Y
+   63
+   :ID
+   2
+   :NAME
+   ""
+   :FORMULA
+   "\\phi"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   323
+   :Y
+   177
+   :ID
+   3
+   :NAME
+   ""
+   :FORMULA
+   "(or \\phi (not \\phi))"
+   :JUSTIFICATION
+   LOGIC::OR-INTRO)
+  (:X
+   154
+   :Y
+   175
+   :ID
+   1
+   :NAME
+   ""
+   :FORMULA
+   "(not (or \\phi (not \\phi)))"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   345
+   :Y
+   324
+   :ID
+   4
+   :NAME
+   ""
+   :FORMULA
+   "(not \\phi)"
+   :JUSTIFICATION
+   LOGIC::NOT-INTRO)
+  (:X
+   323
+   :Y
+   442
+   :ID
+   5
+   :NAME
+   ""
+   :FORMULA
+   "(or \\phi (not \\phi))"
+   :JUSTIFICATION
+   LOGIC::OR-INTRO)
+  (:X
+   168
+   :Y
+   588
+   :ID
+   6
+   :NAME
+   ""
+   :FORMULA
+   "(or \\phi (not \\phi))"
+   :JUSTIFICATION
+   LOGIC::NOT-ELIM))
+ :STRUCTURES
+ ((:CONCLUSION 2 :PREMISES NIL)
+  (:CONCLUSION 3 :PREMISES (2))
+  (:CONCLUSION 1 :PREMISES NIL)
+  (:CONCLUSION 4 :PREMISES (3 1))
+  (:CONCLUSION 5 :PREMISES (4))
+  (:CONCLUSION 6 :PREMISES (1 5)))
+ :INTERFACE
+ (:X
+  244
+  :Y
+  79
+  :WIDTH
+  1375
+  :HEIGHT
+  827
+  :PROOF-SYSTEM
+  LOGIC::PROPOSITIONAL-CALCULUS))
